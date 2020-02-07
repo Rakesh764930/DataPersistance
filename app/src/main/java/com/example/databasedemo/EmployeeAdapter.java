@@ -99,7 +99,7 @@ return v;
     private void updateemployee(final Employee employee) {
         AlertDialog.Builder alert=new AlertDialog.Builder(context);
         LayoutInflater inflater=LayoutInflater.from(context);
-        View v=inflater.inflate(,null);
+        View v=inflater.inflate(R.layout.dialog_layout_update_employee,null);
         alert.setView(v);
         final AlertDialog alertDialog=alert.create();
         alertDialog.show();
