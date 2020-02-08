@@ -86,4 +86,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else
             Toast.makeText(this, "Employee not added", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        editTextName.setText("");
+        editTextSalary.setText("");
+        spinnerDept.setSelection(0);
+    }
 }
